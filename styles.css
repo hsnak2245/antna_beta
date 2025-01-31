@@ -297,12 +297,11 @@ section[data-testid="stSidebar"] .block-container {
     background: #00f5d4;
 }
 
-
-
 /* Style for the recording button */
 button[aria-label="🎙️ Voice Input"] {
     background: linear-gradient(135deg, #FF0000, #FF5757) !important;
-    color: white !important;
+    background-color: rgba(51, 51, 51, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
     font-family: 'Space Mono', monospace !important;
     font-size: 16px !important;
     font-weight: bold !important;
@@ -324,4 +323,33 @@ button[aria-label="🎙️ Voice Input"]:hover {
 button[aria-label="🎙️ Voice Input"]:active {
     transform: scale(1.0) !important;
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5) !important;
+}
+
+
+/* Help button with glow effect */
+.help-button {
+    background-color: #FF0000;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Red glow effect */
+}
+
+.help-button:hover {
+    background-color: #FF4D4D;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Stronger red glow effect */
+}
+
+.help-button:active {
+    background-color: #CC0000;
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Active red glow effect */
 }
